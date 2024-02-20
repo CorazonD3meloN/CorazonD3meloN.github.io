@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>1er año juntos</title>
+    <script defer src="https://app.embed.im/snow.js"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css" integrity="sha512-UPqLxG5cl3zc59sB4YSS8f+dFfzeVeS6upFy4h9meZw8dQODipbS2mZz4tb+zrzsU9H+vOHlSsSD+SRtU9Uqpw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+    <style>
+        body {
+            background-color: #161616; /* Dark background color */
+            color: white; /* Text color */
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            min-height: 100vh;
+            margin: 0;
+            padding: 0;
+        }
+
+        h2 {
+            position: relative;
+            font-size: 4em;
+            letter-spacing: 15px;
+            color: #0e3742;
+            text-transform: uppercase;
+            width: 100%;
+            text-align: center;
+            line-height: 0.70em;
+            outline: none;
+            animation: animate 5s linear infinite;
+            -webkit-box-reflect: below 0px linear-gradient(transparent, rgba(0, 0, 0, 0.5));
+        }
+
+        .love {
+            width: 100px; 
+            height: 100px; 
+            top: 50px;
+            left: 10px;
+            transform: rotate(80deg);
+            background: red;
+            position: relative;
+            border-radius: 19px;
+            animation: beating 2s ease infinite;
+        }
+
+        .love:after,
+        .love:before {
+            content: "";
+            height: 100px; 
+            width: 100px;
+            border-radius: 50%;
+            background: red;
+            position: absolute;
+        }
+
+        .love:before {
+            top: 0px;
+            left: -25px;
+        }
+
+        .love:after {
+            top: -25px;
+        }
+
+        @keyframes beating {
+            0% {
+                transform: rotate(45deg) scale(1);
+            }
+            50% {
+                transform: rotate(45deg) scale(2);
+            }
+            100% {
+                transform: rotate(45deg) scale(1);
+            }
+        }
+
+        @keyframes animate {
+            0%, 18%, 20%, 50.1%, 60%, 65.1%, 80%, 90.1%, 92% {
+                color: #0e3742;
+                text-shadow: none;
+            }
+            18.1%, 20.1%, 30%, 50%, 60.1%, 65%, 80.1%, 90% {
+                color: #fff;
+                text-shadow: 0 0 10px #fd00f1,
+                             0 0 20px #fd00f1,
+                             0 0 40px #fd00f1,
+                             0 0 80px #fd00f1,
+                             0 0 160px #fd00f1;
+            }
+        }
+
+        ul {
+            list-style: none;
+            padding: 0;
+            margin: 0;
+            position: relative;
+        }
+
+        ul img {
+            position: absolute;
+        }
+
+        .img1 {
+            top: -150px;
+            left: -650px;
+        }
+
+        .img2 {
+            top: -150px;
+            left: -320px;
+        }
+
+        .img3 {
+            top: 30px;
+            left: -320px;
+        }
+
+        video {
+            width: 30%;
+            margin-top: -140px;
+            margin-left: 800px;
+            position: relative;
+        }
+
+        .custom-text {
+            position: relative;
+            top: -60px; /* Ajusta esta propiedad para mover el texto hacia arriba o abajo */
+            text-align: center;
+            margin-top: -15px;
+        }
+    </style>
+</head>
+<body>
+    <h2>Te amo mucho mi Kikari</h2>
+    <br>
+    <br> 
+    <div class="love"></div>
+    <ul>
+        <li><img class="img1" src="img1.jpg" width="320px" height="350px"></li>
+        <li><img class="img2" src="img2.jpg" width="130px" height="170px"></li>
+        <li><img class="img3" src="img3.jpg" width="130px" height="170px"></li>
+    </ul>
+    <video id="miVideo" src="para thu.mp4.mp4" width="300px" height="400px" autoplay controls></video>
+    <h3 class="custom-text">PARA TI MI CACHETONCITA🥺😍</h3>
+    <h3 class="custom-text">haz click en las dos jksjks👇</h3>
+    <h3 class="custom-text"> <a href="https://www.youtube.com/watch?v=ZNHWi2RQi_s"> te la dedico flakita❤️</a> </h3>
+    <h3 class="custom-text"> <a href="https://www.youtube.com/watch?v=Rpggqyr-dDQ" target=""> escucha amor🥰</a></h3>
+
+</body>
+</html>

@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Korito</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            text-align: center;
+            margin: 0;
+            padding: 0;
+            background-image: url('fondo.jpg');
+            background-size: cover;
+            background-position: center;
+            height: 100vh;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+        #login-container {
+            max-width: 300px;
+            background-color: rgba(255, 255, 255, 0.2); /* Ajusta el valor de la transparencia aquí */
+            padding: 20px;
+            border-radius: 10px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+            position: absolute;
+            top: 40%; /* Ajusta la posición vertical */
+            left: 78%; /* Ajusta la posición horizontal */
+            transform: translate(-50%, -50%);
+        }
+        .custom-text {
+            position: relative;
+            top: -20px;
+            left: -480px;
+            text-align: center;
+            margin-top: 0; /* Ajusta esta propiedad para establecer el espacio superior entre los párrafos */
+            color: rgb(0, 238, 255); /* Cambia el color del texto, por ejemplo, a rojo */
+        }
+    </style>
+    <script>
+        function validarContraseña() {
+            var contraseñaIngresada = document.getElementById('password').value;
+
+            // Reemplaza 'tu_contrasena' con la contraseña correcta
+            if (contraseñaIngresada === '18/Febrero/2023') {
+                window.location.href = 'Amor.html';
+            } else {
+                alert('Esa no es la contraseña mi niña🤭.');
+            }
+        }
+    </script>
+</head>
+<body>
+    <div id="login-container">
+        <h2>Ingresa la Contraseña mi Reyna👑✨</h2>
+        <form onsubmit="event.preventDefault(); validarContraseña();" >
+            <label for="password">Contraseña:</label>
+            <input type="password" id="password" name="password" required>
+            <br>
+            <input type="submit" value="Ingresar">
+        </form>
+    </div>
+    <div class="custom-text">
+        <h1><p>En mis sueños</p></h1>
+        <h1><p>tu eres mi vida,</p></h1>
+        <h1><p>y en mi vida</p></h1>
+        <h1><p>tu eres mi sueño,</p></h1>
+        <h1><p>Y si el universo</p></h1>
+        <h1><p>supiera cuanto te quiero</p></h1>
+        <h1><p>le daría vergüenza</p></h1>
+        <h1><p>ser tan pequeño...</p></h1>
+    </div>
+</body>
+</html>
